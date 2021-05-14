@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Piano Sheet</title>
+	<link rel="stylesheet" href="piano.css">
+</head>
+<body>
+	<div class="sheet">
+		<!-- <img src="hpbd.jpg" alt=""> -->
+	</div>
+	<div class="container">
+		
+		<div class="key-up">
+			<div data-key="87" class="key sharp" data-note="C#">
+				<kbd>W</kbd>
+				<span class="sound">C#</span>
+			</div>
+			<div data-key="69" class="key sharp" data-note="D#">
+				<kbd>E</kbd>
+				<span class="sound">D#</span>
+			</div>
+			<div data-key="84" class="key sharp" data-note="F#">
+				<kbd>T</kbd>
+				<span class="sound">F#</span>
+			</div>
+			<div data-key="89" class="key sharp" data-note="G#">
+				<kbd>Y</kbd>
+				<span class="sound">G#</span>
+			</div>
+			<div data-key="85" class="key sharp" data-note="A#">
+				<kbd>U</kbd>
+				<span class="sound">A#</span>
+			</div>
+			<div data-key="79" class="key sharp" data-note="C#">
+				<kbd>O</kbd>
+				<span class="sound">C#</span>
+			</div>
+			<div data-key="80" class="key sharp" data-note="D#">
+				<kbd>P</kbd>
+				<span class="sound">D#</span>
+			</div>
+		</div>
+		<div class="keys">
+			<div data-key="65" class="key" data-note="C">
+				<kbd>A</kbd>
+				<span class="sound">C</span>
+			</div>
+			<div data-key="83" class="key" data-note="D">
+				<kbd>S</kbd>
+				<span class="sound">D</span>
+			</div>
+			<div data-key="68" class="key" data-note="E">
+				<kbd>D</kbd>
+				<span class="sound">E</span>
+			</div>
+			<div data-key="70" class="key" data-note="F">
+				<kbd>F</kbd>
+				<span class="sound">F</span>
+			</div>
+			<div data-key="71" class="key" data-note="G">
+				<kbd>G</kbd>
+				<span class="sound">G</span>
+			</div>
+			
+			<div data-key="72" class="key" data-note="A">
+				<kbd>H</kbd>
+				<span class="sound">A</span>
+			</div>
+			<div data-key="74" class="key" data-note="B">
+				<kbd>J</kbd>
+				<span class="sound">B</span>
+			</div>
+			<div data-key="75" class="key" data-note="C">
+				<kbd>K</kbd>
+				<span class="sound">C</span>
+			</div>
+			<div data-key="76" class="key" data-note="D">
+				<kbd>L</kbd>
+				<span class="sound">D</span>
+			</div>
+			<div data-key="186" class="key" data-note="E">
+				<kbd>;</kbd>
+				<span class="sound">E</span>
+			</div>
+		</div>
+	</div>
+
+
+	<audio data-key="87" src="sounds/041.wav"></audio>
+	<audio data-key="69" src="sounds/043.wav"></audio>
+	<audio data-key="84" src="sounds/046.wav"></audio>
+	<audio data-key="89" src="sounds/048.wav"></audio>
+	<audio data-key="85" src="sounds/049.wav"></audio>
+	<audio data-key="79" src="sounds/052.wav"></audio>
+	<audio data-key="80" src="sounds/054.wav"></audio>
+
+	<audio data-key="65" src="sounds/040.wav"></audio>
+	<audio data-key="83" src="sounds/042.wav"></audio>
+	<audio data-key="68" src="sounds/044.wav"></audio>
+	<audio data-key="70" src="sounds/045.wav"></audio>
+	<audio data-key="71" src="sounds/047.wav"></audio>
+	<audio data-key="72" src="sounds/049.wav"></audio>
+	<audio data-key="74" src="sounds/050.wav"></audio>
+	<audio data-key="75" src="sounds/051.wav"></audio>
+	<audio data-key="76" src="sounds/053.wav"></audio>
+	<audio data-key="186" src="sounds/055.wav"></audio>
+
+
+    <script>
+    	
+    	function playSound(e){
+			const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+			const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+			if(!audio) return; //stop the function from running all together
+			audio.currentTime = 0; //return to the start
+			audio.play();
+			key.classList.add('playing');
+		}
+    	function removeTransition(e){
+    		if(e.propertyName !== 'transform') return;// skip it if it's not a transform
+    		this.classList.remove('playing');
+    	}
+
+    	const keys = document.querySelectorAll('.key');
+    	keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+
+    	window.addEventListener('keydown', playSound);
+		
+		
+    </script>
+</body>
+</html>
