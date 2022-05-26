@@ -6,36 +6,19 @@
 body{
 	width: 100%;
 	height: auto;
+	color: #ff6600;
+	background-color: #212121;
 }
-.row{
-	display: flex;
-	flex-wrap: wrap;
+.mainn{
+	
 }
 #first-part{
 	width: 100%;
-	padding: 0px;
-	overflow-y: auto;
+	
 }
-.navbar{
-	position: fixed;
-	background-color: #fff;
-	width: auto;
-	position: fixed;
-	border-radius: 5px;
-	padding: 0px;
-	margin: .5rem;
-	z-index: 100000;
-}
-.navbar-nav{
-	margin: auto;
-}
-.navbar-nav li a{
-	font-size: 22px;
-	font-family: 'helvetica neue';
-	font-weight: 600;
-}
+
 .name{
-	margin-top: 5rem;
+	margin-top: 1rem;
 }
 .name h1{
   overflow: hidden; 
@@ -54,7 +37,7 @@ body{
 
 
 .typing2{
-	font-size: 18px;
+	font-size: 20px;
 }
 .profile-image{
     width: 150px;
@@ -62,18 +45,19 @@ body{
     height: 150px;
     max-height: 100%;
 }
+
 .contact{
 	display: flex;
 	justify-content: space-around;
 }
 .g-mail a{
 	font-size: 1.25rem;
-	color: #212121;
+	color: #ff6600;
 	transition: 0.5s;
 }
 .phone a{
 	font-size: 1.25rem;
-	color: #212121;
+	color: #ff6600;
 	transition: 0.5s;
 }
 .g-mail a:hover{
@@ -91,27 +75,22 @@ body{
 	line-height: 4.5rem;
 	background-color: #212121;
 }
-.mt-4 a{
-	color: #f1f1f1;
-}
-.fb-ic:hover{
+
+
+.fb-ic{
 	color: #4267b2;
 	text-decoration: none;
 }
-.tw-ic:hover{
-	color: #1da1f2;
+.ins-ic{
+	color: #c9008c;
+	text-decoration: none;	
+}
+.yt-ic{
+	color: #ff0000;
 	text-decoration: none;
 }
-.in-ic:hover{
-	color: #0077b5;
-	text-decoration: none;
-}
-.github-ic:hover{
-	color: #fff;
-	text-decoration: none;
-}
-.gitlab-ic:hover{
-	color: #e24329;
+.fb-ic:hover{
+	color: #4267b2;
 	text-decoration: none;
 }
 .ins-ic:hover{
@@ -145,7 +124,8 @@ h3 span{
 	background-color: #d6d6d6;
 }
 .project-item{
-	padding: 65px;
+	width: 100%;
+	padding: 0px 100px;
 	color: #FFF;
 	cursor: pointer;
 }
@@ -154,12 +134,10 @@ h3 span{
 	border-radius: 1rem;
 }
 .project-1{
-	height: width;
-	background-color: #77d07a;
+	
 	
 }
 .project-2{
-	background-color: #333;
 }
 .project-3{
 	background-color: #00bcd4;
@@ -179,14 +157,14 @@ h3 span{
     left: 50%;
     transform: translate(-60%, -50%);
     z-index: 4;
-    color: white;
-    font-size: 3rem;
+    color: #ff6600;
+    font-size: 2rem;
     opacity: 0;
     text-align: center;
     transition: all 0.3s linear;
 }
 .project-item a:hover{
-	color: #fff;
+	color: #ff6600;
 	text-decoration: none;
 }
 .project-item:hover .project-link{
@@ -198,9 +176,9 @@ h3 span{
 	height: 100%;
 	display: block;
 	position: absolute;
+	background-color: #212121;
 	top: 0;
 	left: 0;
-	background-color: black;
 	z-index: 3;
 	opacity: 0;
 }
@@ -210,7 +188,7 @@ h3 span{
 }
 @media screen and (max-width: 600px) {
 	h1{
-		font-size: 2.25rem;
+		font-size: 1.5rem;
 	}
 	.g-mail a{
 		font-size: 1rem;
@@ -219,7 +197,7 @@ h3 span{
 		font-size: 1rem;
 	}
 	h3 span{
-		font-size: 1.5rem;
+		font-size: 1rem;
 	}
 	.project-item{
 		padding: 20px;
