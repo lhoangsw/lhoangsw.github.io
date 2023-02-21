@@ -7,7 +7,7 @@ body{
 	width: 100%;
 	height: auto;
 	color: #ff6600;
-	background-color: #212121;
+	background-color: #313131;
 }
 .mainn{
 	
@@ -73,7 +73,7 @@ body{
 .mt-4{
 	height: 4.5rem;
 	line-height: 4.5rem;
-	background-color: #212121;
+	background-color: #313131;
 }
 
 
@@ -89,6 +89,10 @@ body{
 	color: #ff0000;
 	text-decoration: none;
 }
+.tt-ic{
+	color: #000000;
+	text-decoration: none;
+}
 .fb-ic:hover{
 	color: #4267b2;
 	text-decoration: none;
@@ -99,6 +103,10 @@ body{
 }
 .yt-ic:hover{
 	color: #ff0000;
+	text-decoration: none;
+}
+.tt-ic{
+	color: #000000;
 	text-decoration: none;
 }
 .mt-4 a i{
@@ -140,7 +148,7 @@ h3 span{
 .project-2{
 }
 .project-3{
-	background-color: #00bcd4;
+	
 }
 .project-4{
 	background-color: #607d8b;
@@ -176,7 +184,7 @@ h3 span{
 	height: 100%;
 	display: block;
 	position: absolute;
-	background-color: #212121;
+	background-color: #313131;
 	top: 0;
 	left: 0;
 	z-index: 3;
