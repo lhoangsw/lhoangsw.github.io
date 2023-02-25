@@ -5,177 +5,885 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>lhoang SW</title>
 	
-	<link rel="shortcut icon" type="image/png" href="imgs/daugiai.jpg"/>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
-	<link rel="stylesheet" href="css/gioithieu.css">
+	<link rel="shortcut icon" type="image/png" href="assets/imgs/daugiai.jpg"/>
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+	<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="assets/css/gioithieu.css">
 
 
 </head>
 <body>
 
-	<section class="container-lg ">
-		<div class="justify-content-md-center">
-			<div id="first-part" class="">
-				
-				<div class="name text-center p-1">
-					<h1>
-						<span class="typing text-uppercase">hi, i'm LHoang SW</span>
-					</h1>
-					<br>
-					<div class="typing2-writer">
-						<span class="typing2 text-uppercase">street workout & calisthenics trainer</span>
-						<br>
-					</div>
-				</div>
-				<div class="profile-image mx-auto mb-3">
-					<img src="imgs/daugiai.jpg" alt="profile-image" class="profile-image img-fluid rounded-circle img-thumbnail">
-				</div>
+	<header class="header" id="header">
+		<nav class="nav container">
+			<a href="#" class="nav__logo">lhoangSW</a>
 
-				<div class="content p-1">
-					<div class="short-description mx-auto text-center">
-						<span class="vietsub text-center">Xin chào, mình là Hoàng, một người tập luyện Street Workout & Calisthenics</span>
-						<br>
-						<span class="vietsub text-center">Nếu có hứng thú với việc tập luyện hoặc bạn đang cần tăng cơ, tăng cân, giảm mỡ, độ body thì hãy liên hệ mình nhé !!!</span>
-						<br>
-					</div>
-					<div class="contact mt-3">
-						<div class="g-mail">
-							<a href="mailto:lhoang.sw@gmail.com"><i class="far fa-envelope"></i><span class="ml-1">lhoang.sw@gmail.com</span></a>
-						</div>
-						<div class="phone">
-							<a href=""><i class="fas fa-phone-alt"></i><span class="ml-1">0354330623</span></a>
-						</div>
-					</div>
-					<div class="mt-4 text-center">
-			          <!-- Facebook -->
-			          <a href="https://www.facebook.com/profile.php?id=100005003263573" target="_blank" class="fb-ic">
-			            <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-			          </a>
-			          
-			          <!--Instagram-->
-			          <a href="https://www.instagram.com/lhoang_sw/" target="_blank" class="ins-ic">
-			            <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-			          </a>
-			          <!--Youtube-->
-			          <a href="https://www.youtube.com/channel/UCOqOXBU-Gvkn-hb1yqYQzgQ" target="_blank" class="yt-ic">
-			            <i class="fab fa-youtube fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-			          </a>
-			          <!--TikTok-->
-			          <a href="https://www.tiktok.com/@lehoang_sw" target="_blank" class="tt-ic">
-			            <i class="fab fa-tiktok fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
-			          </a>
-
-			        </div>
-			       <div class=" gioithieu" id="gioithieu">
-					<h3 class="">
-						<span class="text-uppercase font-weight-bold ">giới thiệu.</span>
-					</h3>
-					
-					<div>
-						<h5>
-							<span class="">Kinh Nghiệm</span>
-						</h5>
-					</div>
-					<div class="mb-1">
-						<ul class="information">
-							
-							<li>
-								<span class="font-weight-bold">2015 - Now : </span>Street Workout & Calisthenic
-							</li>
-						</ul>
-					</div>
-					<div>
-						<h5>
-							<span class="">Thành Tích</span>
-						</h5>
-					</div>
-					<div class="mb-1">
-						<ul class="information">
-							<li>
-								<span class="font-weight-bold">Top 3 : </span>Battle Of Bartimes 2018
-							</li>
-							<li>
-								<span class="font-weight-bold">Top 16 : </span>FUSW 2022
-							</li>
-							<li>
-								<span class="font-weight-bold">Top 32 : </span>HNSWOC 2022
-							</li>
-						</ul>
-					</div>
-					<div>
-						<h5>
-							<span class="">Kỹ Năng</span>
-						</h5>
-					</div>
-					<div class="mb-1">
-						<ul class="information">
-							<li>
-								<span class="font-weight-bold">Statics : </span>Handstand, Human Flag, Dragon Flag, Straddle Planche, Front Lever, Back Lever, Elbow Lever, One Arm Back Lever, Full Planche, Straddle Maltese, One Arm Handstand, V-Sit, Manna
-							</li>
-							<li>
-								<span class="font-weight-bold">Dynamic : </span>Swing 360
-							</li>
-						</ul>
-					</div>
-				</div>
-				</div>
-				<!-- end intro -->
-
-				<!-- gioi thieu -->
-				
-
-				
+			<div class="nav__menu" id="nav-menu">
+				<ul class="nav__list grid">
+					<li class="nav__item">
+						<a href="#home" class="nav__link active-link">
+							<i class="uil uil-estate nav__icon"></i> Trang Chủ
+						</a>
+					</li>
+					<li class="nav__item">
+						<a href="#about" class="nav__link">
+							<i class="uil uil-user nav__icon"></i> Thông Tin
+						</a>
+					</li><li class="nav__item">
+						<a href="#skills" class="nav__link">
+							<i class="uil uil-file-alt nav__icon"></i> Kỹ Năng
+						</a>
+					</li><li class="nav__item">
+						<a href="#services" class="nav__link">
+							<i class="uil uil-briefcase-alt nav__icon"></i> Dịch Vụ
+						</a>
+					</li><li class="nav__item">
+						<a href="#portfolio" class="nav__link">
+							<i class="uil uil-scenery nav__icon"></i> Đầu Tư
+						</a>
+					</li>
+					</li><li class="nav__item">
+						<a href="#contact" class="nav__link">
+							<i class="uil uil-message nav__icon"></i> Liên Hệ
+						</a>
+					</li>
+				</ul>
+				<i class="uil uil-times nav__close" id="nav-close"></i>
 			</div>
-			<!-- end firt part -->
 
+			<div class="nav__btns">
+				<!-- theme change button -->
+				<i class="uil uil-moon change-theme" id="theme-button"></i>
 
-			<!-- second part -->
-			<div id="second-part" class="">
-				<div class="project pt-4">
-					<div class="container special">
-						<h3 class="text-uppercase font-weight-bold ml-3 mb-3">
-							<span> ở đây có thể có thứ bạn cần </span>
-						</h3>
-					</div>
-
-					<!-- project 1 -->
-					<div class="project-item project-1 position-relative">
-						<img src="imgs/daugiai.jpg" alt="training" class="project-img img-fluid my-5">
-						<a href="https://www.facebook.com/SacalisVN" class="project-link position-absolute" target="_blank">Giáo Trình Calisthenics</a>
-						<a href="https://www.facebook.com/SacalisVN" class="overlay" target="_blank"></a>
-					</div>
-					<!-- end project 1 -->
-
-					<!-- project 2 -->
-					<div class="project-item project-2 position-relative">
-						<img src="imgs/daugiai.jpg" alt="training" class="project-img img-fluid my-5">
-						<a href="https://www.facebook.com/SacalisVN" class="project-link position-absolute" target="_blank">Sản Phẩm</a>
-						<a href="https://www.facebook.com/SacalisVN" class="overlay" target="_blank"></a>
-					</div>
-					<!-- end project 2 -->
-
-					<!-- project 3 -->
-					<div class="project-item project-3 position-relative">
-						<img src="imgs/daugiai.jpg" alt="training" class="project-img img-fluid my-5">
-						<a href="https://www.facebook.com/SacalisVN" class="project-link position-absolute" target="_blank">Calisthenics Tutorial</a>
-						<a href="https://www.facebook.com/SacalisVN" class="overlay" target="_blank"></a>
-					</div>
-					<!-- end project 3 -->
-					
+				<div class="nav__toggle" id="nav-toggle">
+					<i class="uil uil-apps"></i>
 				</div>
 			</div>
-			<!-- end second part -->
+
+		</nav>
+	</header>
+
+
+	<main class="main">
+		<section class="home section" id="home">
+			<div class="home__container container grid">
+				<div class="home__content grid">
+					<div class="home__social">
+						<a href="https://www.facebook.com/leviethoang281299" target="_blank" class="home__social-icon">
+							<i class="uil uil-facebook-f"></i>
+						</a>
+
+						<a href="https://www.instagram.com/lhoang_sw/" target="_blank" class="home__social-icon">
+							<i class="uil uil-instagram"></i>
+						</a>
+
+						<a href="https://www.youtube.com/@lhoangsw3501/" target="_blank" class="home__social-icon">
+							<i class="uil uil-youtube"></i>
+						</a>
+					</div>
+
+					<div class="home__img">
+						<img src="assets/imgs/daugiai.jpg" alt="" class="home__blob-img">
+
+						</g>
+
+						</svg>
+					</div>
+
+					<div class="home__data">
+						<h1 class="home__title">Hi, Hoàng đây</h1>
+						<h3 class="home__subtitle"></h3>
+						<p class="home__description">Bạn nào cần CV đẹp thì ới mình nhé <br> Phù hợp với bạn nào làm bán hàng Affiliate hoặc bán hàng trên các trang thương mại điện tử lun</p>
+						<a href="#contact" class="button button--flex">
+							Liên hệ tôi<i class="uil uil-message button__icon"></i>
+						</a>
+					</div>
+				</div>
+
+				<div class="home__scroll">
+					<a href="#about" class="home__scroll-button button--flex">
+						<i class="uil uil-mouse-alt home__scroll-mouse"></i>
+						<span class="home__scroll-name">Cuộn xuống để xem thêm</span>
+						<i class="uil uil-arrow-down home__scroll-arrow"></i>
+					</a>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="about section" id="about">
+			<h2 class="section_title">Về Bản Thân</h2>
+			<span class="section__subtitle">Giới thiệu bản thân</span>
+
+			<div class="about__container container grid">
+				<img src="assets/imgs/daugiai.jpg" alt="" class="about__img">
+
+				<div class="about__data">
+					<p class="about__description">Chưa biết điền gì</p>
+
+					<div class="about__info">
+						<div>
+							<span class="about__info-title">+08</span>
+							<span class="about__info-name">Năm <br> lộn xào</span>
+						</div>
+						<div>
+							<span class="about__info-title">+08</span>
+							<span class="about__info-name">Năm <br> lộn xào</span>
+						</div>
+						<div>
+							<span class="about__info-title">+08</span>
+							<span class="about__info-name">Năm <br> lộn xào</span>
+						</div>
+					</div>
+
+					<div class="about__buttons">
+						<a download="" href="#" class="button button--flex">
+							Tải xuống CV<i class="uil uil-download-alt button__icon"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="skills section" id="skills">
+			<h2 class="secion__title">Kỹ Năng</h2>
+			<span class="section__subtitle">Kỹ năng bản thân</span>
+
+			<div class="skills__container container grid">
+				<div>
+					<!-- SKILLS 1 -->
+					<div class="skills__content skills__open">
+						<div class="skills__header">
+							<i class="uil uil-brackets-curly skills__icon"></i>
+
+							<div>
+								<h1 class="skills__titles">Frontend Developer</h1>
+								<span class="skills__subtitle">Hơn 1 năm kinh nghiệm</span>
+							</div>
+
+							<i class="uil uil-angle-down skills__arrow"></i>
+						</div>
+
+						<div class="skills__list grid">
+							<div class="skills__data">
+								<div class="skills__titles">
+									<h3 class="skills__name">HTML</h3>
+									<span class="skills__number">90%</span>
+								</div>
+								<div class="skills__bar">
+									<span class="skills__percentage skills__html"></span>
+								</div>
+
+								<div class="skills__titles">
+									<h3 class="skills__name">CSS</h3>
+									<span class="skills__number">80%</span>
+								</div>
+								<div class="skills__bar">
+									<span class="skills__percentage skills__css"></span>
+								</div>
+
+								<div class="skills__titles">
+									<h3 class="skills__name">Javascript</h3>
+									<span class="skills__number">70%</span>
+								</div>
+								<div class="skills__bar">
+									<span class="skills__percentage skills__js"></span>
+								</div>
+
+								<div class="skills__titles">
+									<h3 class="skills__name">REACT</h3>
+									<span class="skills__number">60%</span>
+								</div>
+								<div class="skills__bar">
+									<span class="skills__percentage skills__react"></span>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<!-- SKILLS 2 -->
+					<div class="skills__content skills__close">
+						<div class="skills__header">
+							<i class="uil uil-server-network skills__icon"></i>
+
+							<div>
+								<h1 class="skills__titles">Backend developer</h1>
+								<span class="skills__subtitle">Hơn 1 năm kinh nghiệm</span>
+							</div>
+
+							<i class="uil uil-angle-down skills__arrow"></i>
+						</div>
+
+						<div class="skills__list grid">
+							<div class="skills__data">
+								<div class="skills__titles">
+									<h3 class="skills__name">PHP</h3>
+									<span class="skills__number">75%</span>
+								</div>
+								<div class="skills__bar">
+									<span class="skills__percentage skills__php"></span>
+								</div>
+
+								<div class="skills__titles">
+									<h3 class="skills__name">Database</h3>
+									<span class="skills__number">50%</span>
+								</div>
+								<div class="skills__bar">
+									<span class="skills__percentage skills__database"></span>
+								</div>
+
+								<div class="skills__titles">
+									<h3 class="skills__name">Laravel</h3>
+									<span class="skills__number">40%</span>
+								</div>
+								<div class="skills__bar">
+									<span class="skills__percentage skills__laravel"></span>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div>
+					<!-- SKILLS 3 -->
+					<div class="skills__content skills__close">
+						<div class="skills__header">
+							<i class="uil uil-swatchbook skills__icon"></i>
+
+							<div>
+								<h1 class="skills__titles">Desinger</h1>
+								<span class="skills__subtitle">Hơn 1 năm kinh nghiệm</span>
+							</div>
+
+							<i class="uil uil-angle-down skills__arrow"></i>
+						</div>
+
+						<div class="skills__list grid">
+							<div class="skills__data">
+								<div class="skills__titles">
+									<h3 class="skills__name">Canvas</h3>
+									<span class="skills__number">70%</span>
+								</div>
+								<div class="skills__bar">
+									<span class="skills__percentage skills__canvas"></span>
+								</div>
+
+								<div class="skills__titles">
+									<h3 class="skills__name">Abode Premiere Pro</h3>
+									<span class="skills__number">50%</span>
+								</div>
+								<div class="skills__bar">
+									<span class="skills__percentage skills__pr"></span>
+								</div>
+
+								<div class="skills__titles">
+									<h3 class="skills__name">Adobe Photoshop</h3>
+									<span class="skills__number">50%</span>
+								</div>
+								<div class="skills__bar">
+									<span class="skills__percentage skills__photoshop"></span>
+								</div>						
+							</div>
+						</div>
+					</div>
+
+					<!-- SKILLS 4 -->
+					<div class="skills__content skills__close">
+						<div class="skills__header">
+							<i class="uil uil-dumbbell skills__icon"></i>
+
+							<div>
+								<h1 class="skills__titles">Workout</h1>
+								<span class="skills__subtitle">Hơn 6 năm tập luyện</span>
+							</div>
+
+							<i class="uil uil-angle-down skills__arrow"></i>
+						</div>
+
+						<div class="skills__list grid">
+							<div class="skills__data">
+								<div class="skills__titles">
+									<h3 class="skills__name">Calisthenics & Street Workout</h3>
+									<span class="skills__number">90%</span>
+								</div>
+								<div class="skills__bar">
+									<span class="skills__percentage skills__sw"></span>
+								</div>
+
+								<div class="skills__titles">
+									<h3 class="skills__name">Gym</h3>
+									<span class="skills__number">50%</span>
+								</div>
+								<div class="skills__bar">
+									<span class="skills__percentage skills__gym"></span>
+								</div>
+
+								<div class="skills__titles">
+									<h3 class="skills__name">Gymnastics</h3>
+									<span class="skills__number">20%</span>
+								</div>
+								<div class="skills__bar">
+									<span class="skills__percentage skills__gymnast"></span>
+								</div>						
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="qualification section">
+			<h2 class="section__title">Trình độ chuyên môn</h2>
+			<span class="section__subtitle">Hành trình của tôi</span>
+
+			<div class="qualification__container container">
+				<div class="qualification__tabs">
+					<div class="qualification__button button--flex qualification__active" data-target='#education'>
+						<i class="uil uil-graduation-cap qualification__icon"></i>
+						Học Vấn
+					</div>
+
+					<div class="qualification__button button--flex" data-target="#work">
+						<i class="uil uil-briefcase-alt qualification__icon"></i>
+						Công Việc
+					</div>
+				</div>
+
+				<div class="qualification__sections">
+					<!-- CONtent 1 -->
+					<div class="qualification__content qualification__active" data-content id="education">
+						<div class="qualification__data">
+
+							<div>
+								<h3 class="qualification__title">Tiểu Học</h3>
+								<span class="qualification__subtitle">Thịnh Liệt</span>
+								<div class="qualification__calendar">
+									<i class="uil uil-calendar-alt"></i>
+									2005-2010
+								</div>
+							</div>
+
+							<div>
+								<span class="qualification__rounder"></span>
+								<span class="qualification__line"></span>
+							</div>
+						</div>
+
+						<div class="qualification__data">
+							<div></div>
+							<div>
+								<span class="qualification__rounder"></span>
+								<span class="qualification__line"></span>
+							</div>
+							<div>
+								<h3 class="qualification__title">THCS</h3>
+								<span class="qualification__subtitle">Thịnh Liệt</span>
+								<div class="qualification__calendar">
+									<i class="uil uil-calendar-alt"></i>
+									2010-2014
+								</div>
+							</div>	
+						</div>
+
+						<div class="qualification__data">
+							<div>
+								<h3 class="qualification__title">THPT</h3>
+								<span class="qualification__subtitle">Việt Nam Ba Lan</span>
+								<div class="qualification__calendar">
+									<i class="uil uil-calendar-alt"></i>
+									2014-2017
+								</div>
+							</div>
+
+							<div>
+								<span class="qualification__rounder"></span>
+								<span class="qualification__line"></span>
+							</div>
+						</div>
+
+						<div class="qualification__data">
+							<div></div>
+
+							<div>
+								<span class="qualification__rounder"></span>
+								<!-- <span class="qualification__line"></span> -->
+							</div>
+							<div>
+								<h3 class="qualification__title">Đại Học</h3>
+								<span class="qualification__subtitle">Kinh Tế Kỹ Thuật Công Nghiệp</span>
+								<div class="qualification__calendar">
+									<i class="uil uil-calendar-alt"></i>
+									2017-2021
+								</div>
+							</div>					
+						</div>
+					</div>
+                    <!-- CONtent 2 -->
+					<div class="qualification__content" data-content id="work">
+						<div class="qualification__data">
+							<div>
+								<h3 class="qualification__title">Vietjack.com</h3>
+								<span class="qualification__subtitle">Thực Tập</span>
+								<div class="qualification__calendar">
+									<i class="uil uil-calendar-alt"></i>
+									2020-2021
+								</div>
+							</div>
+
+							<div>
+								<span class="qualification__rounder"></span>
+								<span class="qualification__line"></span>
+							</div>
+						</div>
+
+						<div class="qualification__data">
+							<div></div>
+							<div>
+								<span class="qualification__rounder"></span>
+								<span class="qualification__line"></span>
+							</div>
+							<div>
+								<h3 class="qualification__title">CEC Ninja Kids</h3>
+								<span class="qualification__subtitle">Coach</span>
+								<div class="qualification__calendar">
+									<i class="uil uil-calendar-alt"></i>
+									2021-2022
+								</div>
+							</div>					
+						</div>
+
+						<div class="qualification__data">
+							<div>
+								<h3 class="qualification__title">FTS Fitness & Yoga Center</h3>
+								<span class="qualification__subtitle">Persional Trainer</span>
+								<div class="qualification__calendar">
+									<i class="uil uil-calendar-alt"></i>
+									2022-2023
+								</div>
+							</div>
+
+							<div>
+								<span class="qualification__rounder"></span>
+								<span class="qualification__line"></span>
+							</div>
+						</div>
+
+						<div class="qualification__data">
+							<div></div>
+							<div>
+								<span class="qualification__rounder"></span>
+								<!-- <span class="qualification__line"></span> -->
+							</div>
+							<div>
+								<h3 class="qualification__title">Lifesoft</h3>
+								<span class="qualification__subtitle">Thực Tập</span>
+								<div class="qualification__calendar">
+									<i class="uil uil-calendar-alt"></i>
+									2023-nay
+								</div>
+							</div>					
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- SERVICES -->
+		<section class="services section" id="services">
+			<h2 class="section__title">Dịch vụ</h2>
+			<span class="section__subtitle">Những dịch vụ của tôi</span>
+
+			<div class="services__container container grid">
+				<!-- SERVICES 1 -->
+				<div class="services__content">
+					<div>
+						<i class="uil uil-web-grid services__icon"></i>
+						<h3 class="services__title">Thiết kế <br>Web Profile</h3>
+					</div>
+
+					<span class="button button--flex button--small button--link services__button">
+						Xem thêm
+						<i class="uil uil-arrow-right button__icon"></i>
+					</span>
+
+					<div class="services__modal">
+						<div class="services__modal-content">
+							<h4 class="services__modal-title">Thiết kế <br>Web Profile</h4>
+							<i class="uil uil-times services__modal-close"></i>
+
+							<ul class="services__modal-services grid">
+								<li class="services__modal-service">
+									<i class="uil uil-check-circle services__modal-icon"></i>
+									<p>Giao diện bắt mắt.</p>
+								</li>
+								<li class="services__modal-service">
+									<i class="uil uil-check-circle services__modal-icon"></i>
+									<p>Tính cá nhân hóa cao.</p>
+								</li>
+								<li class="services__modal-service">
+									<i class="uil uil-check-circle services__modal-icon"></i>
+									<p>Thay đổi theo yêu cầu.</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- SERVICES 2 -->
+				<div class="services__content">
+					<div>
+						<i class="uil uil-video services__icon"></i>
+						<h3 class="services__title">Thiết kế <br> Video</h3>
+					</div>
+
+					<span class="button button--flex button--small button--link services__button">
+						Xem thêm
+						<i class="uil uil-arrow-right button__icon"></i>
+					</span>
+
+					<div class="services__modal">
+						<div class="services__modal-content">
+							<h4 class="services__modal-title">Thiết kế <br> Video</h4>
+							<i class="uil uil-times services__modal-close"></i>
+
+							<ul class="services__modal-services grid">
+								<li class="services__modal-service">
+									<i class="uil uil-check-circle services__modal-icon"></i>
+									<p>Video Youtube, Tiktok, Reel FaceBook Instagram.</p>
+								</li>
+								<li class="services__modal-service">
+									<i class="uil uil-check-circle services__modal-icon"></i>
+									<p>Video Highlight Game.</p>
+								</li>
+								<li class="services__modal-service">
+									<i class="uil uil-check-circle services__modal-icon"></i>
+									<p>Video Trend Tiktok.</p>
+								</li>
+								<li class="services__modal-service">
+									<i class="uil uil-check-circle services__modal-icon"></i>
+									<p>Video Workout Motivation.</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- SERVICES 3 -->
+				<div class="services__content">
+					<div>
+						<i class="uil uil-dumbbell services__icon"></i>
+						<h3 class="services__title">Giáo án <br> Tập Luyện</h3>
+					</div>
+
+					<span class="button button--flex button--small button--link services__button">
+						Xem thêm
+						<i class="uil uil-arrow-right button__icon"></i>
+					</span>
+
+					<div class="services__modal">
+						<div class="services__modal-content">
+							<h4 class="services__modal-title">Giáo án <br> Tập Luyện</h4>
+							<i class="uil uil-times services__modal-close"></i>
+
+							<ul class="services__modal-services grid">
+								<li class="services__modal-service">
+									<i class="uil uil-check-circle services__modal-icon"></i>
+									<p>Lên giáo án tập luyện tăng giảm cân, tăng cơ, giảm mỡ.</p>
+								</li>
+								<li class="services__modal-service">
+									<i class="uil uil-check-circle services__modal-icon"></i>
+									<p>Tư vấn hỗ trợ về dinh dưỡng và các thực phẩm bổ sung.</p>
+								</li>
+								<li class="services__modal-service">
+									<i class="uil uil-check-circle services__modal-icon"></i>
+									<p>Cung cấp dụng cụ tập luyện và thực phẩm bổ sung.</p>
+								</li>
+								<li class="services__modal-service">
+									<i class="uil uil-check-circle services__modal-icon"></i>
+									<p>Huấn luyện viên kèm 1-1.</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- portfolio -->
+		<section class="portfolio section" id="portfolio">
+			<h2 class="section__title">Danh mục đầu tư</h2>
+			<span class="section__subtitle">Gần đây nhất</span>
+
+			<div class="portfolio__container container swiper mySwiper">
+				<div class="swiper-wrapper">
+					<!-- portfolio 1 -->
+					<div class="portfolio__content grid swiper-slide">
+						<img src="assets/imgs/daugiai.jpg" alt="" class="portfolio__img">
+
+						<div class="portfolio__data">
+							<h3 class="portfolio__title">Làm đ có tiền mà đầu tư</h3>
+							<p class="portfolio__description">Ai cho xin ít tiền đi</p>
+							<a href="#" class="button button--flex button--small portfolio__button">
+								<i class="uil uil-arrow-right button__icon"></i>
+							</a>
+						</div>
+					</div>
+					<!-- portfolio 2 -->
+					<div class="portfolio__content grid swiper-slide">
+						<img src="assets/imgs/daugiai.jpg" alt="" class="portfolio__img">
+
+						<div class="portfolio__data">
+							<h3 class="portfolio__title">Làm đ có tiền mà đầu tư</h3>
+							<p class="portfolio__description">Ai cho xin ít tiền đi</p>
+							<a href="#" class="button button--flex button--small portfolio__button">
+								<i class="uil uil-arrow-right button__icon"></i>
+							</a>
+						</div>
+					</div>
+					<!-- portfolio 3 -->
+					<div class="portfolio__content grid swiper-slide">
+						<img src="assets/imgs/daugiai.jpg" alt="" class="portfolio__img">
+
+						<div class="portfolio__data">
+							<h3 class="portfolio__title">Làm đ có tiền mà đầu tư</h3>
+							<p class="portfolio__description">Ai cho xin ít tiền đi</p>
+							<a href="#" class="button button--flex button--small portfolio__button">
+								<i class="uil uil-arrow-right button__icon"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-button-next">
+					<i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+				</div>
+    			<div class="swiper-button-prev">
+    				<i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+    			</div>
+
+    			<div class="swiper-pagination"></div>
+			</div>
+		</section>
+
+		<!-- PROJECT IN MID -->
+		<section class="project section">
+			<div class="project__bg">
+				<div class="project__container container grid">
+					<div class="project__data">
+						<h2 class="project__title">Bạn có ý tưởng mới ?</h2>
+						<p class="project__description">Ý tưởng của bạn là ý tưởng của tôi <br> Ý tưởng của tôi là của tôi</p>
+						<a href="#contact" class="button button--flex button--white">
+							Liên hệ với tui
+							<i class="uil uil-message project__icon button__icon"></i>
+						</a>
+					</div>
+
+					<img src="assets/imgs/ava.png" alt="" class="project__img">
+				</div>
+			</div>
+		</section>
+
+		<!-- testimonial -->
+		<section class="testimonial section">
+			<h2 class="section__title">Đánh giá</h2>
+			<span class="section__subtitle">Đánh giá của khánh hàng</span>
+
+			<div class="testimonial__container container swiper mySwiper">
+				<div class="swiper-wrapper">
+					<!-- testimonial 1 -->
+					<div class="testimonial__content swiper-slide">
+						<div class="testimonial__data">
+							<div class="testimonial__header">
+								<img src="assets/imgs/nam.jpg" alt="" class="testimonial__img">
+
+								<div>
+									<h3 class="testimonial__name">Nguyễn Nam</h3>
+									<span class="testimonial__client">Khách hàng</span>
+								</div>
+							</div>
+
+							<div>
+								<i class="uil uil-star-half-alt testimonial__icon-star"></i>
+								<i class="uil uil-star-half-alt testimonial__icon-star"></i>
+								<i class="uil uil-star testimonial__icon-star"></i>
+								<i class="uil uil-star testimonial__icon-star"></i>
+								<i class="uil uil-star testimonial__icon-star"></i>
+							</div>
+						</div>
+
+						<p class="testimonial__description">Anh dạy như cứt</p>
+					</div>
+
+					<!-- testimonial 2 -->
+					<div class="testimonial__content swiper-slide">
+						<div class="testimonial__data">
+							<div class="testimonial__header">
+								<img src="assets/imgs/thang.jpg" alt="" class="testimonial__img">
+
+								<div>
+									<h3 class="testimonial__name">Nguyễn Thắng</h3>
+									<span class="testimonial__client">Khách hàng</span>
+								</div>
+							</div>
+
+							<div>
+								<i class="uil uil-star-half-alt testimonial__icon-star"></i>
+								<i class="uil uil-star-half-alt testimonial__icon-star"></i>
+								<i class="uil uil-star testimonial__icon-star"></i>
+								<i class="uil uil-star testimonial__icon-star"></i>
+								<i class="uil uil-star testimonial__icon-star"></i>
+							</div>
+						</div>
+
+						<p class="testimonial__description">Anh dạy ngu vcl</p>
+					</div>
+
+					<!-- testimonial 3 -->
+					<div class="testimonial__content swiper-slide">
+						<div class="testimonial__data">
+							<div class="testimonial__header">
+								<img src="assets/imgs/daugiai.jpg" alt="" class="testimonial__img">
+
+								<div>
+									<h3 class="testimonial__name">Jimmi</h3>
+									<span class="testimonial__client">Client</span>
+								</div>
+							</div>
+
+							<div>
+								<i class="uil uil-star testimonial__icon-star"></i>
+								<i class="uil uil-star testimonial__icon-star"></i>
+								<i class="uil uil-star testimonial__icon-star"></i>
+								<i class="uil uil-star testimonial__icon-star"></i>
+								<i class="uil uil-star testimonial__icon-star"></i>
+							</div>
+						</div>
+
+						<p class="testimonial__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti illo odit sequi, expedita animi quisquam id, corporis consectetur quaerat totam repellendus ad est quod praesentium aliquid dicta. Tempora, quasi, minus?</p>
+					</div>
+				</div>
+
+				<div class="swiper-pagination swiper-pagination-testimonial"></div>
+			</div>
+		</section>
+
+		<!-- Contact me -->
+		<section class="contact section" id="contact">
+			<h2 class="section__title">Liên hệ với tôi</h2>
+			<span class="section__subtitle">Liên lạc</span>
+
+			<div class="contact__container container grid">
+				<div>
+					<div class="contact__information">
+						<i class="uil uil-phone contact__icon"></i>
+
+						<div>
+							<h3 class="contact__title">SĐT</h3>
+							<span class="contact__subtitle">0354330***</span>
+						</div>
+					</div>
+
+					<div class="contact__information">
+						<i class="uil uil-envelope contact__icon"></i>
+
+						<div>
+							<h3 class="contact__title">Mail</h3>
+							<span class="contact__subtitle">lhoang.sw@gmail.com</span>
+						</div>
+					</div>
+
+					<div class="contact__information">
+						<i class="uil uil-map-marker contact__icon"></i>
+
+						<div>
+							<h3 class="contact__title">Địa chỉ</h3>
+							<span class="contact__subtitle">Hà Nội - Việt Nam</span>
+						</div>
+					</div>
+				</div>
+
+				<form action="" class="contact__form grid">
+					<div class="contact__inputs grid">
+						<div class="contact__content">
+							<label for="" class="contact__label">Tên</label>
+							<input type="text" class="contact__input">
+						</div>
+						<div class="contact__content">
+							<label for="" class="contact__label">Email</label>
+							<input type="email" class="contact__input">
+						</div>
+					</div>
+					<div class="contact__content">
+						<label for="" class="contact__label">Dự án</label>
+						<input type="text" class="contact__input">
+					</div>
+					<div class="contact__content">
+						<label for="" class="contact__label">Lời nhắn</label>
+						<textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+					</div>
+
+					<div>
+						<a href="#" class="button button--flex">
+							Gửi lời nhắn
+							<i class="uil uil-message button__icon"></i>
+						</a>
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="footer__bg">
+			<div class="footer__container container grid">
+				<div>
+					<h1 class="footer__title">lhoangSW</h1>
+					<span class="footer__subtitle"></span>
+				</div>
+
+				<ul class="footer__links">
+					<li>
+						<a href="#services" class="footer__link">Dịch Vụ</a>
+					</li>
+					<li>
+						<a href="#portfolio" class="footer__link">Đầu Tư</a>
+					</li>
+					<li>
+						<a href="#contact" class="footer__link">Liên Hệ</a>
+					</li>
+				</ul>
+
+				<div class="footer__socials">
+					<a href="#" class="footer__social">
+						<i class="uil uil-facebook-f"></i>
+					</a>
+					<a href="#" class="footer__social">
+						<i class="uil uil-instagram"></i>
+					</a>
+					<a href="#" class="footer__social">
+						<i class="uil uil-twitter-alt"></i>
+					</a>
+				</div>
+			</div>
+
+			<p class="footer__copy">&#169; lhoangSW. All right reserved</p>
 		</div>
-	</section>
-	
+	</footer>
 
+	<!-- scroll top -->
+	<a href="#" class="scrollup" id="scroll-up">
+		<i class="uil uil-arrow-up scrollup__icon"></i>
+	</a>
 
 	
-	<script src="js/jquery-3.5.1.min.js" ></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-	<script src="js/gioithieu.js"></script>
+	<!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+	<script src="assets/js/swiper-bundle.min.js"></script>
+	<script src="assets/js/gioithieu.js"></script>
+	
 </body>
 </html>
