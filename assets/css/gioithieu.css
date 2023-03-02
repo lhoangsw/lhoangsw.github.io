@@ -385,7 +385,7 @@ img{
 }
 
 .about__img{
-	width: 200px;
+	width: 250px;
 	border-radius: center;
 	justify-self: center;
 	align-self: center;
@@ -533,6 +533,16 @@ img{
 }
 .skills__gymnast{
 	width: 20%;
+}
+
+.skills__ta{
+	width: 65%;
+}
+.skills__tw{
+	width: 75%;
+}
+.skills__knm{
+	width: 65%;
 }
 
 .skills__close .skills__list{
